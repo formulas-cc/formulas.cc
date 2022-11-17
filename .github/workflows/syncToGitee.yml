@@ -2,7 +2,7 @@ name: syncToGitee
 on:
   push:
     branches:
-      - master
+      - main
 jobs:
   repo-sync:
     runs-on: ubuntu-latest
@@ -16,6 +16,6 @@ jobs:
           dst_token:  ${{ secrets.GITEE_TOKEN }}
           account_type: 'org'
           static_list: 'formulas.cc'
-          force_update: true
+          force_update: false
           debug: true
           timeout: '1h'
