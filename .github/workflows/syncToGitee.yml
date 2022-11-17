@@ -14,8 +14,8 @@ jobs:
           dst: 'gitee/formulas-cc'
           dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
           dst_token:  ${{ secrets.GITEE_TOKEN }}
-          account_type: 'user'
+          account_type: 'org'
           static_list: 'formulas.cc'
-          force_update: true
+          force_update: false
           debug: true
           timeout: '1h'
